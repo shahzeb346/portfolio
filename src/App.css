@@ -1,0 +1,81 @@
+
+.about {
+  margin-top: -13px;
+  background: #f8f5f5;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.skill-box{
+  background: #6366f1;
+  width: 130px;
+  height: 130px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5px;
+  animation: floatAnimation 2s ease-in-out infinite;
+  
+}
+
+
+@keyframes floatAnimation {
+  0% {
+    transform: translatey(0);
+  }
+  50% {
+    transform: translatey(-10px);
+  }
+  100% {
+    transform: translatey(0);
+  }
+}
+
+
+.skill-box img{
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.skill-box:hover img{
+transform: rotatey(360deg);
+box-shadow:3px 4px 10px #1e293b;
+
+
+}
+
+
+/* footer section code */
+.footer{
+  height: 75px;
+  background: #9393ac;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer p{
+  color: #fff;
+  font-size: 16px;
+}
+
+/* media query */
+/* Base Footer Styles (Already provided) */
+.footer {
+  height: 75px;
+  background: #9393ac;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  display: flex;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 16px;
+}
+
+
