@@ -1,5 +1,7 @@
 
+
 export default function Project({ list }) {
+
   return (
     <div className="bg-white rounded-xl shadow-md hover:shadow-xl hover:scale-[1.02] transition-all duration-300 p-5 flex flex-col border border-transparent hover:border-blue-300" id="projects">
       
@@ -31,7 +33,10 @@ export default function Project({ list }) {
         View Project
       </a>
     </div>
+     
   );
 }
+
+
 
 

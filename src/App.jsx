@@ -149,16 +149,20 @@ function App() {
       <Navbar/>
       <Banner/>
       <About/>
-      <div className="h-[100vh]  py-6 px-6 sm:px-6 lg:px-8" id="skills">
-      <h2 className="text-3xl py-6 sm:text-4xl font-bold text-center mb-10 mt-20 text-gray-800" >
-        Technologies and Tools
-      </h2>
-      <div  className="flex flex-wrap gap-4 justify-center items-center mt-20" >
-        {skills.map((skill, index) => (
-          <Skill key={index} user={skill} />
-        ))}
-      </div>
-    </div>
+      
+    <div
+    id="skills"
+    className="min-h-[100vh] py-6 px-4 sm:px-6 lg:px-8">
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-8 sm:mb-10 mt-16 sm:mt-20 text-gray-800">
+      Technologies and Tools
+    </h2>
+
+  <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 mt-10 sm:mt-16">
+    {skills.map((skill, index) => (
+      <Skill key={index} user={skill} />
+    ))}
+  </div>
+</div>
 
     <div className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50" id='projects'>
   <h2 className="text-3xl font-bold text-center text-gray-800 mb-8 mt-10">Projects</h2>
@@ -172,21 +176,20 @@ function App() {
   </div>
 </div>
 
-    
-     
-
-<div className="bg-indigo-500 py-12 px-4 h-[100vh]" id='services'>
-  <h2 className="text-3xl sm:text-4xl font-bold text-white text-center mb-12 mt-15 tracking-wide">
+<div
+  id="services"
+  className="bg-indigo-500 min-h-[100vh] py-10 px-4 sm:px-6 lg:px-8">
+  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-8 sm:mb-12 mt-12 tracking-wide">
     My Services
   </h2>
 
-  
-  <div className="flex flex-wrap justify-center items-center mt-[100px] gap-6">
+  <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-10 mt-10 sm:mt-16">
     {UserService.map((service, index) => (
       <Services key={index} data={service} />
     ))}
   </div>
-</div>
+</div> 
+
       <Contact/>
       <Footer/>
     </div>
